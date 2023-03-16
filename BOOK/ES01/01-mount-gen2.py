@@ -44,6 +44,10 @@ display(df_ord)
 
 # COMMAND ----------
 
+dbutils.fs.unmount("/mnt/Gen2")
+
+# COMMAND ----------
+
 storageAccount="storage001xxtestxxag2"
 acct_info="fs.azure.account.key.{}.dfs.core.windows.net".format(storageAccount)
 
